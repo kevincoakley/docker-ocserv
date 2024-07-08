@@ -44,7 +44,7 @@ RUN buildDeps=" \
 			| xargs -r apk info --installed \
 			| sort -u \
 		)" \
-	&& apk add --virtual .run-deps $runDeps gnutls-utils iptables libnl3 readline libseccomp-dev lz4-dev \
+	&& apk add --virtual .run-deps $runDeps gnutls-utils iptables iptables-legacy libnl3 readline libseccomp-dev lz4-dev \
 	&& apk del .build-deps \
 	&& rm -rf /var/cache/apk/*
 
