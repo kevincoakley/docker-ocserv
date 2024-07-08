@@ -1,8 +1,8 @@
-FROM alpine:3.20.1
+FROM alpine:3.18.7
 
 LABEL org.opencontainers.image.authors="kcoakley@sdsc.edu"
 
-ENV OC_VERSION=1.2.4
+ENV OC_VERSION=1.3.0
 
 RUN buildDeps=" \
 		curl \
